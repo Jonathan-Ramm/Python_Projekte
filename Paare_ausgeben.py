@@ -1,6 +1,5 @@
 ids = [
-   "b01","b02","b0l","b0r","b5l","cb","c5","b0r","b0l",
-    "b5r","b6l","b6r","b7l","b7r","b8l","b8r","b3l","b3r","b1l","b1r","b2l","b2r","r5","l5","c5r","c5l",
+    
 ]
 pairs = []
 for i in range(len(ids)):
@@ -14,7 +13,7 @@ for a, b in pairs:
 
 unique_pairs = sorted(unique_pairs)
 
-# 10 Paare pro Zeile
+# n Paare pro Zeile
 chunk_size = 10
 for i in range(0, len(unique_pairs), chunk_size):
     chunk = unique_pairs[i:i+chunk_size]
